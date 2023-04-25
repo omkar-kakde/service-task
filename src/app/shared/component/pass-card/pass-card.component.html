@@ -1,0 +1,18 @@
+
+
+
+<div class="card mb-4">
+    <div class="card-body">
+        <p>
+               Name : {{passObj.fullname}}
+        </p>
+        <p>
+            check In Date  :  {{(passObj.checkInDate | date) ?? "not cheked In"}}
+        </p>
+        <p>
+            children : {{passObj.children?.length ?? '0'}}
+        </p>
+        <button class="btn btn-primary" > Edit</button>
+        <button class="btn btn-danger ml-2">Remove</button>
+    </div>
+</div>
